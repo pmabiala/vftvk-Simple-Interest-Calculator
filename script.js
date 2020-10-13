@@ -4,7 +4,7 @@ function checkZero(pObjectId){
 
     if (tmpValue <=0){
         alert("Positive value required");
-        DOMobject.SetFocus();
+        DOMobject.focus();
     }
 
     return tmpValue;
@@ -15,8 +15,7 @@ function compute(){
     
     if ((_principal = checkZero('principal')) <= 0) return;
     if ((_rate = checkZero('rate')) <=0) return;
-    if ((_year = checkZero('year')) <=0) return;
-    alert(_principal);
+    if ((_years = checkZero('years')) <=0) return;
 
     var _interest = _principal * _rate * _years / 100;
 
