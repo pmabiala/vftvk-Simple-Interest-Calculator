@@ -14,13 +14,11 @@
             var _interest;
         </script>
         <div class="maindiv">
-
-            <div class="subdiv">
             <h1>Simple Interest Calculator</h1>
-
-            Amount <input type="number"  id="principal">  <br/>
-            Interest Rate <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" oninput="(function(){_rate = document.getElementById('rate').value; document.getElementById('rate-display').innerHTML=_rate + '%';})()"><span id="rate-display">10.25%</span>  <br/>
-            No. of Years <input type="text"  id="years" list="years_list">  <br/><br/>
+            <div class="subdiv">
+            <label>Amount</label> <input type="number"  id="principal">  <br/>
+            <label>Interest Rate</label> <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" oninput="(function(){_rate = document.getElementById('rate').value; document.getElementById('rate-display').innerHTML=_rate + '%';})()"><span id="rate-display">10.25%</span>  <br/>
+            <label>No. of Years</label><input type="text"  id="years" list="years_list">  <br/><br/>
          
             <datalist id="years_list">
                 <option value="1">
@@ -38,7 +36,6 @@
             <button onclick="compute()">Compute Interest</button><br/>
 
             <br>
-            <b>Interest :</b>
             <span id="result"></span><br><br>
             </div>
         </div>
