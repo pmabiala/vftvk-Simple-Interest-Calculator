@@ -6,7 +6,6 @@ body {
 h1{
     color:gray;
     font-family:"verdana";
-    text-align:center;
 }
 
 label{
@@ -15,10 +14,14 @@ label{
     margin: 8px 0px;
 }
 
+#years{
+    width:35px;
+}
+
 .maindiv{
     background-color:white;
     color:black;
-    width:600px;
+    width:520px;
     padding:20px;
     border-radius:25px;
     margin-left:auto;
@@ -32,7 +35,7 @@ label{
 }
 
 strong{
-    color:darkred;
+    background-color:yellow;
 }
 
 

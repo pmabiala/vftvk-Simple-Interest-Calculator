@@ -21,7 +21,7 @@ function compute(){
 
     /* Build output text */
     var output = "If you deposit <strong>" + _principal + "</strong>,<br>";
-    output += "at an interest rate of <strong>" + _rate + "</strong>.<br>";
+    output += "at an interest rate of <strong>" + _rate + "%</strong>.<br>";
     output += "You will receive an amount of <strong>" + _interest + "</strong>, <br>"
     output += "in the year <strong>" + (Number.parseInt(new Date().getFullYear()) + Number.parseInt(_years)) + "</strong>";
     document.getElementById('result').innerHTML = output;
